@@ -1,3 +1,22 @@
 <resources>
     <string name="app_name">Calculator_Real</string>
+    <string name="string_0">0</string>
+    <string name="string_AC">AC</string>
+    <string name="string_backspace">⌫</string>
+    <string name="string_percent">%</string>
+    <string name="string_divide">÷</string>
+    <string name="string_7">7</string>
+    <string name="string_8">8</string>
+    <string name="string_9">9</string>
+    <string name="string_multiply">×</string>
+    <string name="string_4">4</string>
+    <string name="string_5">5</string>
+    <string name="string_6">6</string>
+    <string name="string_subtract">−</string>
+    <string name="string_1">1</string>
+    <string name="string_2">2</string>
+    <string name="string_3">3</string>
+    <string name="string_add">+</string>
+    <string name="string_period">.</string>
+    <string name="string_equals">=</string>
 </resources>
