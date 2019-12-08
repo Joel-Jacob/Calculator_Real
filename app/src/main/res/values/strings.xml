@@ -19,4 +19,5 @@
     <string name="string_add">+</string>
     <string name="string_period">.</string>
     <string name="string_equals">=</string>
+    <string name="string_history">History:</string>
 </resources>

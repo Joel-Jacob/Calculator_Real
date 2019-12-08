@@ -10,6 +10,7 @@ import android.widget.TextView;
 public class MainActivity extends AppCompatActivity {
 
     private TextView calculatorText;
+    private TextView historyText;
 
     private final int DIVIDE = 0;
     private final int ADD = 1;
@@ -30,6 +31,7 @@ public class MainActivity extends AppCompatActivity {
         Log.d(TAG, "onCreate");
 
         calculatorText = findViewById(R.id.textView);
+        historyText = findViewById(R.id.historyText);
     }
 
     private void clearField(){
@@ -66,7 +68,7 @@ public class MainActivity extends AppCompatActivity {
                 answerValue = firstValue * secondValue;
                 break;
         }
-
+        historyText.setText("History: "+answerValue);
         calculatorText.setText(answerValue+"");
     }
 
@@ -151,6 +153,10 @@ public class MainActivity extends AppCompatActivity {
 
             case R.id.multiply:
                 setOperator(MULTIPLY);
+                break;
+
+            case R.id.historyText:
+                calculatorText.setText(historyText.getText().toString().substring(8, historyText.length()));
                 break;
 
         }
