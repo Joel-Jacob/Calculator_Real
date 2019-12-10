@@ -1,6 +1,6 @@
 # Calculator_Real
 
-Project: Calculator Date: 12/8/2019
+Project: Calculator Date: 12/8/2019, 12/9/2019
 
 Assignment Instructions: create an android calcuator application. Use the constraint layout to build the application. Add 5 buttons to landscape mode for scientific calculator.
 
