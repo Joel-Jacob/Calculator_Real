@@ -17,6 +17,10 @@ public class MainActivity extends AppCompatActivity {
     private final int SUBTRACT = 2;
     private final int REMAINDER = 3;
     private final int MULTIPLY = 4;
+    private final int SIN = 5;
+    private final int COS = 6;
+    private final int TAN = 7;
+    private final int SQRT = 8;
 
     private float answerValue = 0.0f;
     private float firstValue = 0.0f;
@@ -66,6 +70,18 @@ public class MainActivity extends AppCompatActivity {
                 break;
             case MULTIPLY:
                 answerValue = firstValue * secondValue;
+                break;
+            case SIN:
+                answerValue = (float)Math.sin(firstValue);
+                break;
+            case COS:
+                answerValue = (float)Math.cos(firstValue);
+                break;
+            case TAN:
+                answerValue = (float)Math.tan(firstValue);
+                break;
+            case SQRT:
+                answerValue = (float)Math.sqrt(firstValue);
                 break;
         }
         historyText.setText("History: "+answerValue);
@@ -159,6 +175,29 @@ public class MainActivity extends AppCompatActivity {
                 calculatorText.setText(historyText.getText().toString().substring(8, historyText.length()));
                 break;
 
+            case R.id.sin:
+                setOperator(SIN);
+                calculate();
+                break;
+
+            case R.id.cos:
+                setOperator(COS);
+                calculate();
+                break;
+
+            case R.id.tan:
+                setOperator(TAN);
+                calculate();
+                break;
+
+            case R.id.pi:
+                calculatorText.setText(3.141592+"");
+                break;
+
+            case R.id.sqrt:
+                setOperator(SQRT);
+                calculate();
+                break;
         }
     }
 }
